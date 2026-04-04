@@ -1,5 +1,3 @@
-import json
-import os
 from commands import data
 
 circle = True
@@ -12,12 +10,6 @@ while circle:
         if cmd[0] == "exit":
             circle = data[cmd[0]](cmd)
             continue
-        if cmd[0] == "add":
-            data[cmd[0]](cmd[1])
-            continue
-        if cmd[0] == "del":
-            data[cmd[0]](cmd[1])
-            continue
-        data[cmd[0]](cmd)
+        data[cmd[0]](cmd[1 if len(cmd) > 1 else 0])
     else:
         print("Not command")

@@ -8,7 +8,11 @@
     "del",
     "date",
     "time",
-    "history"
+    "history",
+    "find",
+    "edit",
+    "del_all",
+    "backup"
   ],
   "add": []
 }
