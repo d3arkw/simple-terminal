@@ -1,1 +1,14 @@
-{"commands": ["help", "exit", "clear", "add", "list"], "add": ["cje;ofds", "ldsgdfg", "fdgfdgf"]}
+{
+  "commands": [
+    "help",
+    "exit",
+    "clear",
+    "add",
+    "list",
+    "del",
+    "date",
+    "time",
+    "history"
+  ],
+  "add": []
+}
