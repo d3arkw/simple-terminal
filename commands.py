@@ -6,7 +6,7 @@ history_lst = []
 
 
 def load():
-    base = os.path.dirname(__file__)
+    base = os.getcwd()
     path = os.path.join(base, "commands.json")
     with open(path, "r") as f:
         a = json.load(f)
@@ -14,7 +14,7 @@ def load():
 
 
 def dump(a):
-    base = os.path.dirname(__file__)
+    base = os.getcwd()
     path = os.path.join(base, "commands.json")
     with open(path, "w") as f:
         json.dump(a, f, indent=2)
@@ -136,7 +136,7 @@ def del_all(text=None):
 def backup(text=None):
     i = 1
     a = load()
-    base = os.path.dirname(__file__)
+    base = os.getcwd()
     while os.path.exists(os.path.join(base, f"commands{i}.json")):
         i += 1
     filename = f"commands{i}.json"
