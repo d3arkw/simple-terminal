@@ -1,67 +1,72 @@
-# Simple Terminal CLI (Python)
+# Terminal Notes & Command Manager
 
-A simple command-line terminal application written in Python with custom commands and JSON-based storage.
+**Version:** v1.0  
+**Author:** d3arkw  
 
-## Features
-
-- Add and manage notes
-- Edit notes by index
-- Delete single or all notes
-- Search notes (find command)
-- Show current date and time
-- Command history tracking
-- Backup system for saving data copies
-- Clear terminal screen
-
-## Commands
-
-help        - show available commands  
-add <text>  - add a new note  
-list        - show all notes  
-del <id>    - delete note by index  
-edit <id> <text> - edit note  
-find <text> - search notes  
-count       - show number of notes  
-del_all     - delete all notes (with confirmation)  
-date        - show current date  
-time        - show current time  
-history     - show command history  
-backup      - create backup file  
-clear       - clear terminal  
-exit        - exit application  
-
-## Storage
-
-All data is stored in a JSON file:
-- commands.json
-
-Backups are automatically saved as:
-- commands1.json, commands2.json, etc.
-
-## How to Run
-
-1. Install Python
-2. Run:
-
-python main.py
-
-## Project Structure
-
-main.py       - main loop and command handling  
-commands.py   - all command functions  
-commands.json - data storage  
-
-## Future Improvements
-
-- Executable (.exe) version
-- Better command parsing
-- UI improvements
-- More advanced commands
+A simple, terminal-based notes and command manager.  
+Built with Python, using JSON for data storage. Designed for beginners learning backend fundamentals.  
 
 ---
 
-This project was created as a practice for working with:
-- CLI applications
-- JSON storage
-- File system operations
-- Python architecture
+## 🛠 Features
+
+- Add, edit, delete, and list notes  
+- Search notes by keyword  
+- Track command history  
+- Display current date and time  
+- Backup notes automatically  
+- Clear terminal for a fresh workspace  
+- Intuitive console interface  
+
+---
+
+## 📦 Included in the Release
+
+- `terminal.exe` — ready-to-run executable  
+- `commands.json` — JSON data file  
+
+---
+
+## ⚡ Usage
+
+1. Extract the ZIP file from the release  
+2. Run `terminal.exe` (no installation needed)  
+3. Type commands in the terminal to manage notes:
+
+| Command | Description |
+|---------|-------------|
+| `add <note>` | Add a new note |
+| `list` | Show all notes |
+| `edit <index> <text>` | Edit a note |
+| `del <index>` | Delete a note |
+| `del_all` | Delete all notes |
+| `find <text>` | Search notes |
+| `history` | Show command history |
+| `date` | Display current date |
+| `time` | Display current time |
+| `clear` | Clear terminal |
+| `backup` | Backup notes to a new JSON file |
+| `exit` | Exit the program |
+
+---
+
+## 🖥 Installation
+
+No installation required. Simply run the executable from any folder. Make sure `commands.json` is in the same directory.  
+
+---
+
+## 📈 Currently Improving
+
+- Error handling and input validation  
+- Enhanced JSON persistence  
+- Console interface improvements  
+- Python backend fundamentals  
+
+---
+
+## 📫 Contact
+
+- Email: d3arkw@icloud.com  
+- Telegram: [@d3arkw](https://t.me/d3arkw)  
+- VK: [d3arkw](https://vk.ru/d3arkw)  
